@@ -4,8 +4,8 @@ dotenv.config();
 
 const ENVIROMENT = {
     PORT: process.env.PORT || 3000,
-    URL_FRONTEND: `http://localhost:5173`,
-    URL_BACKEND: `http://localhost:3000`,
+    URL_FRONTEND: `https://frontend-app-messaging.vercel.app`,
+    URL_BACKEND: `https://frontend-app-messaging.vercel.app`,
     SECRET_KEY_JWT: process.env.SECRET_KEY_JWT,
     EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
     EMAIL_USERNAME: process.env.EMAIL_USERNAME,
