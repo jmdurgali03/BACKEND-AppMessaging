@@ -20,10 +20,7 @@ const PORT = ENVIROMENT.PORT;
 
 app.use(
     cors({
-        origin: ENVIROMENT.URL_FRONTEND || "http://localhost:5173",
-        credentials: true,
-        allowedHeaders: ["Content-Type", "Authorization"],
-        methods: ["GET", "POST", "PUT", "DELETE"]
+        origin: ENVIROMENT.URL_FRONTEND 
     })
 );
 
