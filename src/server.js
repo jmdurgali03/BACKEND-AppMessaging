@@ -20,7 +20,9 @@ const PORT = ENVIROMENT.PORT;
 
 app.use(
     cors({
-        origin: ENVIROMENT.URL_FRONTEND 
+        origin: ENVIROMENT.URL_FRONTEND,
+        methods: 'GET,POST,PUT,DELETE',
+        allowedHeaders: 'Content-Type,Authorization'
     })
 );
 
