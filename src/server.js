@@ -20,16 +20,8 @@ const cors = require('cors');
 
 const PORT = ENVIROMENT.PORT;
 
-app.use(
-    cors({
-        origin: ENVIROMENT.URL_FRONTEND,
-        methods: 'GET,POST,PUT,DELETE',
-        allowedHeaders: 'Content-Type,Authorization'
-    })
-);
-
 app.use(cors({
-    origin: 'https://frontend-app-messaging.vercel.app',
+    origin: "*",
     methods: 'GET,POST,PUT,DELETE,OPTIONS',
     allowedHeaders: 'Content-Type,Authorization'
   }));
